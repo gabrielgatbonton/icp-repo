@@ -1,0 +1,27 @@
+.lead-title {
+  color: $primary-color;
+  font-weight: 800;
+  span {
+    color: $secondary-color;
+  }
+}
+
+//h5 Tags
+.page-title {
+  color: $primary-color;
+  font-weight: 800;
+}
+
+//Buttons
+.btn {
+  transition: all 1s;
+}
+.btn:hover {
+  background: $primary-color;
+  opacity: 0.8;
+}
+.btn-primary {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  border: none;
+}

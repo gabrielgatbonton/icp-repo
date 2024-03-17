@@ -1,0 +1,23 @@
+{
+  "name": "icp-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielgatbonton/icp-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielgatbonton/icp-repo/issues"
+  },
+  "homepage": "https://github.com/gabrielgatbonton/icp-repo#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

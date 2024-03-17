@@ -1,0 +1,50 @@
+@import "config";
+@import "utilities";
+
+body {
+  overflow: hidden;
+  font-family: $mont-font;
+}
+
+#navbar {
+  .container .navbar-brand {
+    color: $primary-color;
+  }
+}
+
+#section {
+  &-1 {
+    height: 100vh;
+    background: #fff;
+  }
+  &-2 {
+    height: 100vh;
+    background: $bg-color-white-bluish;
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+    .text-box {
+      h3,
+      h5 {
+        text-align: center;
+      }
+    }
+  }
+  &-3 {
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+
+    img {
+      max-width: 300px;
+    }
+  }
+  &-4 {
+    height: 100vh;
+    background: $bg-color-white-bluish;
+  }
+}
+
+@import "media";
