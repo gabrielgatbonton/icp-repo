@@ -2,7 +2,7 @@
 @import "utilities";
 
 body {
-  overflow: hidden;
+  // overflow: hidden;
   font-family: $mont-font;
 }
 
@@ -36,14 +36,104 @@ body {
     height: 100vh;
     background: #fff;
     text-align: center;
-
-    img {
-      max-width: 300px;
-    }
   }
   &-4 {
-    height: 100vh;
+    height: 100%;
     background: $bg-color-white-bluish;
+    text-align: center;
+
+    .container {
+      #timeline {
+        ul {
+          padding-top: 50px;
+
+          li {
+            list-style: none;
+            position: relative;
+            width: 5px;
+            margin: 0 auto;
+            padding: 100px 0;
+            background: #797979;
+            
+
+            div.item {
+              position: relative;
+              bottom: 0;
+              width: 300px;
+              padding: 1rem;
+              text-align: justify;
+
+              h5 {
+                color: $primary-color;
+              }
+
+              div.chip {
+                width: 100px;
+                height: auto;
+                padding: 7px 7px;
+                border-radius: 50px;
+                background: $primary-color;
+                box-shadow: 0 0 4px $primary-color;
+                text-align: center;
+                font-weight: 800;
+                color: set-text-color($primary-color);
+                margin-bottom: 10px;
+              }
+            }
+            img.image {
+              width: 300px;
+              position: absolute; /* Set position to absolute */
+              top: 23%; /* Center vertically */
+              left: -350px; /* Adjust as needed to position to the left of the dots */
+            }
+          }
+          li:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 23%;
+            width: 20px;
+            height: 20px;
+            background: $primary-color;
+            border-radius: 50%;
+            box-shadow: 0 0 4px $primary-color;
+            transform: translateX(-50%);
+          }
+
+          li:nth-child(odd) .item,
+          li:nth-child(odd) img.image {
+            left: 40px;
+          }
+
+          li:nth-child(even) .item,
+          li:nth-child(even) img.image {
+            left: -343px;
+          }
+
+          li:nth-child(even) .item .chip {
+            margin-left: auto;
+          }
+
+          li:nth-child(even) .item h5 {
+            text-align: end;
+          }
+
+          li:nth-child(odd) img.image {
+            width: 300px;
+            position: absolute;
+            top: 23%;
+            left: -350px;
+          }
+
+          li:nth-child(even) img.image {
+            width: 300px;
+            position: absolute;
+            top: 23%;
+            left: 50px;
+          }
+        }
+      }
+    }
   }
 }
 

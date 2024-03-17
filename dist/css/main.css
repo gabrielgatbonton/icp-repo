@@ -22,7 +22,6 @@
   border: none; }
 
 body {
-  overflow: hidden;
   font-family: "Montserrat", sans-serif; }
 
 #navbar .container .navbar-brand {
@@ -46,20 +45,88 @@ body {
   height: 100vh;
   background: #fff;
   text-align: center; }
-  #section-3 img {
-    max-width: 300px; }
 
 #section-4 {
-  height: 100vh;
-  background: #f5fafe; }
+  height: 100%;
+  background: #f5fafe;
+  text-align: center; }
+  #section-4 .container #timeline ul {
+    padding-top: 50px; }
+    #section-4 .container #timeline ul li {
+      list-style: none;
+      position: relative;
+      width: 5px;
+      margin: 0 auto;
+      padding: 100px 0;
+      background: #797979; }
+      #section-4 .container #timeline ul li div.item {
+        position: relative;
+        bottom: 0;
+        width: 300px;
+        padding: 1rem;
+        text-align: justify; }
+        #section-4 .container #timeline ul li div.item h5 {
+          color: #1b8366; }
+        #section-4 .container #timeline ul li div.item div.chip {
+          width: 100px;
+          height: auto;
+          padding: 7px 7px;
+          border-radius: 50px;
+          background: #1b8366;
+          box-shadow: 0 0 4px #1b8366;
+          text-align: center;
+          font-weight: 800;
+          color: #fff;
+          margin-bottom: 10px; }
+      #section-4 .container #timeline ul li img.image {
+        width: 300px;
+        position: absolute;
+        /* Set position to absolute */
+        top: 23%;
+        /* Center vertically */
+        left: -350px;
+        /* Adjust as needed to position to the left of the dots */ }
+    #section-4 .container #timeline ul li:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 23%;
+      width: 20px;
+      height: 20px;
+      background: #1b8366;
+      border-radius: 50%;
+      box-shadow: 0 0 4px #1b8366;
+      transform: translateX(-50%); }
+    #section-4 .container #timeline ul li:nth-child(odd) .item,
+    #section-4 .container #timeline ul li:nth-child(odd) img.image {
+      left: 40px; }
+    #section-4 .container #timeline ul li:nth-child(even) .item,
+    #section-4 .container #timeline ul li:nth-child(even) img.image {
+      left: -343px; }
+    #section-4 .container #timeline ul li:nth-child(even) .item .chip {
+      margin-left: auto; }
+    #section-4 .container #timeline ul li:nth-child(even) .item h5 {
+      text-align: end; }
+    #section-4 .container #timeline ul li:nth-child(odd) img.image {
+      width: 300px;
+      position: absolute;
+      top: 23%;
+      left: -350px; }
+    #section-4 .container #timeline ul li:nth-child(even) img.image {
+      width: 300px;
+      position: absolute;
+      top: 23%;
+      left: 50px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   #section-3 {
     height: 100vh; }
-    #section-3 .container {
-      margin: 2rem 0; }
-    #section-3 img {
-      max-width: 250px; } }
+    #section-3 .container h5 {
+      font-size: 1rem; }
+    #section-3 .container h2 {
+      font-size: 1.4rem; }
+    #section-3 .container p {
+      font-size: 0.8rem; } }
 
 @media (max-width: 768px) {
   body {
@@ -67,6 +134,4 @@ body {
   #section-3 {
     height: 100%; }
     #section-3 .container {
-      margin: 2rem 0; }
-    #section-3 img {
-      max-width: 300px; } }
+      margin: 2rem 0; } }
