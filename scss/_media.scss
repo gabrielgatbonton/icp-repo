@@ -17,16 +17,130 @@
   }
 }
 
+@media (max-width: 992px) {
+  #section {
+    &-3 {
+      .container {
+        .container {
+          width: 80vw;
+        }
+      }
+    }
+    &-5 {
+      .wave {
+        width: 100%;
+        left: 0;
+        top: 45%;
+      }
+      .container {
+        .image {
+          width: 500px;
+        }
+        .row {
+          .col-12.col-lg-4 {
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   body {
     overflow: scroll;
   }
   #section {
+    &-2 {
+      height: 100%;
+    }
     &-3 {
       .container {
         margin: 2rem 0;
       }
       height: 100%;
+    }
+    &-4 {
+      .container {
+        #timeline {
+          ul {
+            li {
+              padding: 60px 0;
+            }
+            li::after {
+              top: 85px;
+            }
+          }
+        }
+      }
+    }
+
+    &-5 {
+      .wave {
+        width: 100%;
+        left: 0;
+        top: 40%;
+      }
+
+      .container {
+        .image {
+          width: 400px;
+        }
+        .row {
+          .col-12.col-lg-4 {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    overflow: scroll;
+
+    #section {
+      &-4 {
+        .container {
+          #timeline {
+            ul {
+              li {
+                margin: 0 auto 0 0;
+                padding: 40px 0;
+                div.item {
+                  width: 80vw;
+                }
+                div img.image {
+                  width: 80vw;
+                }
+              }
+              li::after {
+                top: 65px;
+              }
+              li:nth-child(odd) img.image,
+              li:nth-child(even) img.image {
+                position: relative;
+                left: 40px;
+              }
+              li:nth-child(even) .item {
+                left: 40px;
+              }
+              li:nth-child(even) .item .chip {
+                margin-left: 0;
+              }
+              li:nth-child(even) .item h5 {
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+      &-5 {
+        .wave {
+          top: 45%;
+        }
+      }
     }
   }
 }

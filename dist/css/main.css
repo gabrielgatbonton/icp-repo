@@ -45,6 +45,8 @@ body {
   height: 100vh;
   background: #fff;
   text-align: center; }
+  #section-3 .container .container {
+    width: 50vw; }
 
 #section-4 {
   height: 100%;
@@ -63,7 +65,7 @@ body {
         position: relative;
         bottom: 0;
         width: 300px;
-        padding: 1rem;
+        padding: 1rem 1rem;
         text-align: justify; }
         #section-4 .container #timeline ul li div.item h5 {
           color: #1b8366; }
@@ -78,19 +80,13 @@ body {
           font-weight: 800;
           color: #fff;
           margin-bottom: 10px; }
-      #section-4 .container #timeline ul li img.image {
-        width: 300px;
-        position: absolute;
-        /* Set position to absolute */
-        top: 23%;
-        /* Center vertically */
-        left: -350px;
-        /* Adjust as needed to position to the left of the dots */ }
+      #section-4 .container #timeline ul li div img.image {
+        width: 300px; }
     #section-4 .container #timeline ul li::after {
       content: "";
       position: absolute;
       left: 50%;
-      top: 23%;
+      top: 125px;
       width: 20px;
       height: 20px;
       background: #1b8366;
@@ -108,19 +104,41 @@ body {
     #section-4 .container #timeline ul li:nth-child(even) .item h5 {
       text-align: end; }
     #section-4 .container #timeline ul li:nth-child(odd) img.image {
-      width: 300px;
       position: absolute;
       top: 23%;
       left: -350px; }
     #section-4 .container #timeline ul li:nth-child(even) img.image {
-      width: 300px;
       position: absolute;
       top: 23%;
       left: 50px; }
 
 #section-5 {
   height: 100vh;
-  background: #fff; }
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  #section-5 .wave {
+    width: 100%;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    z-index: 1; }
+  #section-5 .container {
+    position: relative; }
+    #section-5 .container .image {
+      width: 500px;
+      z-index: 2; }
+    #section-5 .container p {
+      text-align: start; }
+    #section-5 .container a {
+      position: relative;
+      z-index: 3; }
+
+#section-6 {
+  height: 100vh;
+  background: #f5fafe;
+  text-align: center; }
 
 @media (max-width: 1440px) {
   #section-3 {
@@ -132,10 +150,61 @@ body {
     #section-3 .container p {
       font-size: 0.8rem; } }
 
+@media (max-width: 992px) {
+  #section-3 .container .container {
+    width: 80vw; }
+  #section-5 .wave {
+    width: 100%;
+    left: 0;
+    top: 45%; }
+  #section-5 .container .image {
+    width: 500px; }
+  #section-5 .container .row .col-12.col-lg-4 {
+    margin-top: 60px; } }
+
 @media (max-width: 768px) {
   body {
     overflow: scroll; }
+  #section-2 {
+    height: 100%; }
   #section-3 {
     height: 100%; }
     #section-3 .container {
-      margin: 2rem 0; } }
+      margin: 2rem 0; }
+  #section-4 .container #timeline ul li {
+    padding: 60px 0; }
+  #section-4 .container #timeline ul li::after {
+    top: 85px; }
+  #section-5 .wave {
+    width: 100%;
+    left: 0;
+    top: 40%; }
+  #section-5 .container .image {
+    width: 400px; }
+  #section-5 .container .row .col-12.col-lg-4 {
+    margin-top: 50px; } }
+
+@media (max-width: 576px) {
+  body {
+    overflow: scroll; }
+    body #section-4 .container #timeline ul li {
+      margin: 0 auto 0 0;
+      padding: 40px 0; }
+      body #section-4 .container #timeline ul li div.item {
+        width: 80vw; }
+      body #section-4 .container #timeline ul li div img.image {
+        width: 80vw; }
+    body #section-4 .container #timeline ul li::after {
+      top: 65px; }
+    body #section-4 .container #timeline ul li:nth-child(odd) img.image,
+    body #section-4 .container #timeline ul li:nth-child(even) img.image {
+      position: relative;
+      left: 40px; }
+    body #section-4 .container #timeline ul li:nth-child(even) .item {
+      left: 40px; }
+    body #section-4 .container #timeline ul li:nth-child(even) .item .chip {
+      margin-left: 0; }
+    body #section-4 .container #timeline ul li:nth-child(even) .item h5 {
+      text-align: start; }
+    body #section-5 .wave {
+      top: 45%; } }
