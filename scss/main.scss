@@ -16,6 +16,42 @@ body {
   &-1 {
     height: 100vh;
     background: #fff;
+    .container-case {
+      background: $bg-color-white-bluish;
+      width: 100%;
+      padding: 5rem 0;
+
+      .container {
+        background: $bg-color-white-bluish;
+        .row {
+          .col-12 {
+            h1 {
+              font-size: 4rem;
+              font-weight: 700;
+              width: 500px;
+            }
+            p {
+              margin-top: 1.5rem;
+              font-size: 1.2rem;
+            }
+          }
+          .images {
+            position: relative;
+            img.img-fluid {
+              position: relative;
+            }
+            img.position-man {
+              height: 500px;
+              position: absolute;
+              right: -100px;
+            }
+          }
+        }
+      }
+    }
+    .container-case::before {
+      content: "";
+    }
   }
   &-2 {
     height: 100vh;
@@ -26,9 +62,10 @@ body {
       height: auto;
     }
     .text-box {
-      h3,
-      h5 {
-        text-align: center;
+      width: 400px;
+      text-align: center;
+      p {
+        text-align: justify;
       }
     }
   }
@@ -101,6 +138,13 @@ body {
             transform: translateX(-50%);
           }
 
+          li:first-child {
+            border-radius: 10px 10px 0 0;
+          }
+          li:last-child {
+            border-radius: 0 0 10px 10px;
+          }
+
           li:nth-child(odd) .item,
           li:nth-child(odd) img.image {
             left: 40px;
@@ -144,7 +188,7 @@ body {
     .wave {
       width: 100%;
       position: absolute;
-      bottom: -120px;
+      bottom: -8vw;
       left: 0;
       z-index: 1;
     }
@@ -152,7 +196,7 @@ body {
     .container {
       position: relative;
       .image {
-        width: 500px;
+        width: 40vw;
         z-index: 2;
       }
       p {
