@@ -2,7 +2,6 @@
 @import "utilities";
 
 body {
-  // overflow: hidden;
   font-family: $mont-font;
 }
 
@@ -14,7 +13,8 @@ body {
 
 #section {
   &-1 {
-    height: 100vh;
+    height: 100%;
+    padding: 50px 0;
     background: #fff;
     .container-case {
       background: $bg-color-white-bluish;
@@ -24,7 +24,7 @@ body {
       .container {
         background: $bg-color-white-bluish;
         .row {
-          .col-12 {
+          .col-12.col-md-6.text {
             h1 {
               font-size: 4rem;
               font-weight: 700;
@@ -35,7 +35,7 @@ body {
               font-size: 1.2rem;
             }
           }
-          .images {
+          .col-12.col-md-6.images {
             position: relative;
             img.img-fluid {
               position: relative;
@@ -49,12 +49,10 @@ body {
         }
       }
     }
-    .container-case::before {
-      content: "";
-    }
   }
   &-2 {
-    height: 100vh;
+    height: 100%;
+    padding: 50px 0;
     background: $bg-color-white-bluish;
 
     img {
@@ -70,7 +68,8 @@ body {
     }
   }
   &-3 {
-    height: 100vh;
+    height: 100%;
+    padding: 50px 0;
     background: #fff;
     text-align: center;
     .container {
@@ -81,6 +80,7 @@ body {
   }
   &-4 {
     height: 100%;
+    padding: 50px 0;
     background: $bg-color-white-bluish;
     text-align: center;
 
@@ -179,39 +179,40 @@ body {
     }
   }
   &-5 {
-    height: 100vh;
+    height: 100%;
+    padding: 50px 0;
     background: #fff;
-    text-align: center;
     position: relative;
     overflow: hidden;
 
     .wave {
-      width: 100%;
       position: absolute;
-      bottom: -8vw;
+      width: 100%;
+      bottom: -150px;
       left: 0;
       z-index: 1;
     }
 
     .container {
       position: relative;
-      .image {
-        width: 40vw;
-        z-index: 2;
-      }
-      p {
-        text-align: start;
-      }
-      a {
-        position: relative;
-        z-index: 3;
+      .row {
+        .col-12.col-lg-6 {
+          img {
+            z-index: -1;
+          }
+          h5,
+          h3 {
+            text-align: center;
+          }
+        }
       }
     }
   }
   &-6 {
-    height: 100vh;
+    height: 100%;
     background: $bg-color-white-bluish;
     text-align: center;
+    padding: 100px 0;
   }
 }
 

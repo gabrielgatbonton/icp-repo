@@ -5,6 +5,9 @@
   .lead-title span {
     color: #e9ae0b; }
 
+.text-green {
+  color: #1b8366; }
+
 .page-title {
   color: #1b8366;
   font-weight: 800; }
@@ -29,7 +32,8 @@ body {
   color: #1b8366; }
 
 #section-1 {
-  height: 100vh;
+  height: 100%;
+  padding: 50px 0;
   background: #fff; }
   #section-1 .container-case {
     background: #f5fafe;
@@ -37,26 +41,25 @@ body {
     padding: 5rem 0; }
     #section-1 .container-case .container {
       background: #f5fafe; }
-      #section-1 .container-case .container .row .col-12 h1 {
+      #section-1 .container-case .container .row .col-12.col-md-6.text h1 {
         font-size: 4rem;
         font-weight: 700;
         width: 500px; }
-      #section-1 .container-case .container .row .col-12 p {
+      #section-1 .container-case .container .row .col-12.col-md-6.text p {
         margin-top: 1.5rem;
         font-size: 1.2rem; }
-      #section-1 .container-case .container .row .images {
+      #section-1 .container-case .container .row .col-12.col-md-6.images {
         position: relative; }
-        #section-1 .container-case .container .row .images img.img-fluid {
+        #section-1 .container-case .container .row .col-12.col-md-6.images img.img-fluid {
           position: relative; }
-        #section-1 .container-case .container .row .images img.position-man {
+        #section-1 .container-case .container .row .col-12.col-md-6.images img.position-man {
           height: 500px;
           position: absolute;
           right: -100px; }
-  #section-1 .container-case::before {
-    content: ""; }
 
 #section-2 {
-  height: 100vh;
+  height: 100%;
+  padding: 50px 0;
   background: #f5fafe; }
   #section-2 img {
     width: 300px;
@@ -68,7 +71,8 @@ body {
       text-align: justify; }
 
 #section-3 {
-  height: 100vh;
+  height: 100%;
+  padding: 50px 0;
   background: #fff;
   text-align: center; }
   #section-3 .container .container {
@@ -76,6 +80,7 @@ body {
 
 #section-4 {
   height: 100%;
+  padding: 50px 0;
   background: #f5fafe;
   text-align: center; }
   #section-4 .container #timeline ul {
@@ -143,124 +148,126 @@ body {
       left: 50px; }
 
 #section-5 {
-  height: 100vh;
+  height: 100%;
+  padding: 50px 0;
   background: #fff;
-  text-align: center;
   position: relative;
   overflow: hidden; }
   #section-5 .wave {
-    width: 100%;
     position: absolute;
-    bottom: -8vw;
+    width: 100%;
+    bottom: -150px;
     left: 0;
     z-index: 1; }
   #section-5 .container {
     position: relative; }
-    #section-5 .container .image {
-      width: 40vw;
-      z-index: 2; }
-    #section-5 .container p {
-      text-align: start; }
-    #section-5 .container a {
-      position: relative;
-      z-index: 3; }
+    #section-5 .container .row .col-12.col-lg-6 img {
+      z-index: -1; }
+    #section-5 .container .row .col-12.col-lg-6 h5,
+    #section-5 .container .row .col-12.col-lg-6 h3 {
+      text-align: center; }
 
 #section-6 {
-  height: 100vh;
+  height: 100%;
   background: #f5fafe;
-  text-align: center; }
+  text-align: center;
+  padding: 100px 0; }
 
 @media (max-width: 1440px) {
-  #section-1 .container-case .container .row .col-12 h1 {
+  #section-1 .container-case .container .row .col-12.col-md-6.text h1 {
     font-size: 3rem;
     width: 100%; }
-  #section-1 .container-case .container .row .images img.position-man {
+  #section-1 .container-case .container .row .col-12.col-md-6.images img.position-man {
     height: 400px;
     right: -80px; }
-  #section-3 {
-    height: 100vh; }
-    #section-3 .container h5 {
-      font-size: 1rem; }
-    #section-3 .container h2 {
-      font-size: 1.4rem; }
-    #section-3 .container p {
-      font-size: 0.8rem; }
+  #section-3 .container h5 {
+    font-size: 1rem; }
+  #section-3 .container h2 {
+    font-size: 1.4rem; }
+  #section-3 .container p {
+    font-size: 0.8rem; }
   #section-5 .wave {
-    bottom: 0; }
-  #section-5 .container .image {
-    width: 50vw; } }
+    bottom: -110px; }
+  #section-5 .container .row .col-12.col-lg-6.text p {
+    font-size: 0.9rem; } }
 
 @media (max-width: 992px) {
-  #section-1 .container-case .container .row .col-12 h1 {
-    font-size: 2rem;
-    width: 100%; }
-  #section-1 .container-case .container .row .col-12 p {
+  #section-1 .container-case .container .row .col-12.col-md-6.text p {
     font-size: 1rem; }
-  #section-1 .container-case .container .row .images img.position-man {
+  #section-1 .container-case .container .row .col-12.col-md-6.images img.position-man {
     height: 300px;
     right: -50px; }
   #section-2 img {
     width: 250px; }
-  #section-3 {
-    height: 100%;
-    padding: 20px 0; }
-    #section-3 .container .container {
-      width: 80vw; }
+  #section-3 .container .container {
+    width: 80vw; }
   #section-4 {
     padding: 20px 0; }
-  #section-5 .wave {
-    width: 100%;
-    height: 50%;
-    left: 0;
-    top: 25%; }
-  #section-5 .container .image {
-    width: 40vw; }
-  #section-5 .container .row .col-12.col-lg-4 {
-    margin-top: 100px; } }
+  #section-5 {
+    padding: 0; }
+    #section-5 .wave {
+      width: 100%;
+      top: 50%; }
+    #section-5 .container .row .col-12.col-lg-6 {
+      padding: 50px 0; } }
 
 @media (max-width: 768px) {
-  body {
-    overflow: scroll; }
-  #section-1 .container-case .container .row .images img.img-fluid {
-    width: 60vw; }
-  #section-1 .container-case .container .row .images img.position-man {
-    right: 0; }
-  #section-2 {
-    height: 100%; }
-    #section-2 .container .row .col-12 .text-box {
-      margin: 0 auto 0 auto; }
-  #section-3 {
-    height: 100%; }
-    #section-3 .container {
-      margin: 2rem 0; }
+  #section-1 .container-case .container .row .col-12.col-md-6.text {
+    text-align: center; }
+  #section-1 .container-case .container .row .col-12.col-md-6.images {
+    padding: 50px 30px 50px 30px; }
+    #section-1 .container-case .container .row .col-12.col-md-6.images .position-man {
+      display: none; }
+  #section-2 .container .row .col-12 .text-box {
+    margin: 0 auto 0 auto; }
+  #section-3 .container {
+    margin: 2rem 0; }
   #section-4 .container #timeline ul li {
     padding: 60px 0; }
   #section-4 .container #timeline ul li::after {
     top: 85px; }
-  #section-5 .container .image {
-    width: 400px; }
-  #section-5 .container .row .col-12.col-lg-4 {
-    margin-top: 100px; } }
+  #section-5 .wave {
+    display: none; }
+  #section-5 .container {
+    overflow: visible; }
+    #section-5 .container .row .col-12.col-lg-6:first-child {
+      position: relative; }
+    #section-5 .container .row .col-12.col-lg-6:first-child:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      bottom: 10px;
+      left: 0;
+      background: #1b8366; }
+    #section-5 .container .row .col-12.col-lg-6.text {
+      text-align: center; }
+      #section-5 .container .row .col-12.col-lg-6.text p {
+        text-align: start; } }
 
 @media (max-width: 576px) {
-  body {
-    overflow: scroll; }
-    body #section-4 .container #timeline ul li {
-      margin: 0 auto 0 0;
-      padding: 40px 0; }
-      body #section-4 .container #timeline ul li div.item {
-        width: 80vw; }
-      body #section-4 .container #timeline ul li div img.image {
-        width: 80vw; }
-    body #section-4 .container #timeline ul li::after {
-      top: 65px; }
-    body #section-4 .container #timeline ul li:nth-child(odd) img.image,
-    body #section-4 .container #timeline ul li:nth-child(even) img.image {
-      position: relative;
-      left: 40px; }
-    body #section-4 .container #timeline ul li:nth-child(even) .item {
-      left: 40px; }
-    body #section-4 .container #timeline ul li:nth-child(even) .item .chip {
-      margin-left: 0; }
-    body #section-4 .container #timeline ul li:nth-child(even) .item h5 {
-      text-align: start; } }
+  #section-1 .container-case .container .row .col-12.col-md-6.text h1 {
+    font-size: 2.5rem; }
+  #section-4 .container #timeline ul li {
+    margin: 0 auto 0 0;
+    padding: 40px 0; }
+    #section-4 .container #timeline ul li div.item {
+      width: 80vw; }
+    #section-4 .container #timeline ul li div img.image {
+      width: 80vw; }
+  #section-4 .container #timeline ul li::after {
+    top: 65px; }
+  #section-4 .container #timeline ul li:nth-child(odd) img.image,
+  #section-4 .container #timeline ul li:nth-child(even) img.image {
+    position: relative;
+    left: 40px; }
+  #section-4 .container #timeline ul li:nth-child(even) .item {
+    left: 40px; }
+  #section-4 .container #timeline ul li:nth-child(even) .item .chip {
+    margin-left: 0; }
+  #section-4 .container #timeline ul li:nth-child(even) .item h5 {
+    text-align: start; }
+  #section-5 .wave {
+    display: none; }
+  #section-5 .container .row .col-12.col-lg-6.text {
+    padding: 50px 30px 50px 30px; } }

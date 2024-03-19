@@ -4,13 +4,13 @@
       .container-case {
         .container {
           .row {
-            .col-12 {
+            .col-12.col-md-6.text {
               h1 {
                 font-size: 3rem;
                 width: 100%;
               }
             }
-            .images {
+            .col-12.col-md-6.images {
               img.position-man {
                 height: 400px;
                 right: -80px;
@@ -21,7 +21,6 @@
       }
     }
     &-3 {
-      height: 100vh;
       .container {
         h5 {
           font-size: 1rem;
@@ -36,11 +35,15 @@
     }
     &-5 {
       .wave {
-        bottom: 0;
+        bottom: -110px;
       }
       .container {
-        .image {
-          width: 50vw;
+        .row {
+          .col-12.col-lg-6.text {
+            p {
+              font-size: 0.9rem;
+            }
+          }
         }
       }
     }
@@ -53,16 +56,12 @@
       .container-case {
         .container {
           .row {
-            .col-12 {
-              h1 {
-                font-size: 2rem;
-                width: 100%;
-              }
+            .col-12.col-md-6.text {
               p {
                 font-size: 1rem;
               }
             }
-            .images {
+            .col-12.col-md-6.images {
               img.position-man {
                 height: 300px;
                 right: -50px;
@@ -78,8 +77,6 @@
       }
     }
     &-3 {
-      height: 100%;
-      padding: 20px 0;
       .container {
         .container {
           width: 80vw;
@@ -90,19 +87,15 @@
       padding: 20px 0;
     }
     &-5 {
+      padding: 0;
       .wave {
         width: 100%;
-        height: 50%;
-        left: 0;
-        top: 25%;
+        top: 50%;
       }
       .container {
-        .image {
-          width: 40vw;
-        }
         .row {
-          .col-12.col-lg-4 {
-            margin-top: 100px;
+          .col-12.col-lg-6 {
+            padding: 50px 0;
           }
         }
       }
@@ -111,20 +104,18 @@
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow: scroll;
-  }
   #section {
     &-1 {
       .container-case {
         .container {
           .row {
-            .images {
-              img.img-fluid {
-                width: 60vw;
-              }
-              img.position-man {
-                right: 0;
+            .col-12.col-md-6.text {
+              text-align: center;
+            }
+            .col-12.col-md-6.images {
+              padding: 50px 30px 50px 30px;
+              .position-man {
+                display: none;
               }
             }
           }
@@ -132,7 +123,6 @@
       }
     }
     &-2 {
-      height: 100%;
       .container {
         .row {
           .col-12 {
@@ -147,7 +137,6 @@
       .container {
         margin: 2rem 0;
       }
-      height: 100%;
     }
     &-4 {
       .container {
@@ -165,13 +154,29 @@
     }
 
     &-5 {
+      .wave {
+        display: none;
+      }
       .container {
-        .image {
-          width: 400px;
-        }
+        overflow: visible;
         .row {
-          .col-12.col-lg-4 {
-            margin-top: 100px;
+          .col-12.col-lg-6:first-child {
+            position: relative;
+          }
+          .col-12.col-lg-6:first-child:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: 10px;
+            left: 0;
+            background: $primary-color;
+          }
+          .col-12.col-lg-6.text {
+            text-align: center;
+            p {
+              text-align: start;
+            }
           }
         }
       }
@@ -180,59 +185,66 @@
 }
 
 @media (max-width: 576px) {
-  body {
-    overflow: scroll;
-
-    #section {
-      &-4 {
+  #section {
+    &-1 {
+      .container-case {
         .container {
-          #timeline {
-            ul {
-              li {
-                margin: 0 auto 0 0;
-                padding: 40px 0;
-                div.item {
-                  width: 80vw;
-                }
-                div img.image {
-                  width: 80vw;
-                }
-              }
-              li::after {
-                top: 65px;
-              }
-              li:nth-child(odd) img.image,
-              li:nth-child(even) img.image {
-                position: relative;
-                left: 40px;
-              }
-              li:nth-child(even) .item {
-                left: 40px;
-              }
-              li:nth-child(even) .item .chip {
-                margin-left: 0;
-              }
-              li:nth-child(even) .item h5 {
-                text-align: start;
+          .row {
+            .col-12.col-md-6.text {
+              h1 {
+                font-size: 2.5rem;
               }
             }
           }
         }
       }
-      &-5 {
+    }
+    &-4 {
+      .container {
+        #timeline {
+          ul {
+            li {
+              margin: 0 auto 0 0;
+              padding: 40px 0;
+              div.item {
+                width: 80vw;
+              }
+              div img.image {
+                width: 80vw;
+              }
+            }
+            li::after {
+              top: 65px;
+            }
+            li:nth-child(odd) img.image,
+            li:nth-child(even) img.image {
+              position: relative;
+              left: 40px;
+            }
+            li:nth-child(even) .item {
+              left: 40px;
+            }
+            li:nth-child(even) .item .chip {
+              margin-left: 0;
+            }
+            li:nth-child(even) .item h5 {
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+    &-5 {
+      .wave {
+        display: none;
+      }
+      .container {
+        .row {
+          .col-12.col-lg-6.text {
+            padding: 50px 30px 50px 30px;
+          }
+        }
       }
     }
   }
 }
-
-// @media (max-height: 992px) {
-//   #section {
-//     &-5 {
-//       .container {
-//         .image {
-//           // width: 600px;
-//         }
-//       }
-//     }
-//   }
-// }
