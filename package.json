@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
