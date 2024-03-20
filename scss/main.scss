@@ -198,12 +198,16 @@ body {
       .row {
         .col-12.col-lg-6 {
           img {
-            z-index: -1;
+            z-index: 0;
           }
+        }
+        .col-12.col-lg-6.text {
+          position: relative;
           h5,
           h3 {
             text-align: center;
           }
+          z-index: 2;
         }
       }
     }

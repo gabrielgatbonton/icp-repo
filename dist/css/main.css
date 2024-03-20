@@ -162,10 +162,13 @@ body {
   #section-5 .container {
     position: relative; }
     #section-5 .container .row .col-12.col-lg-6 img {
-      z-index: -1; }
-    #section-5 .container .row .col-12.col-lg-6 h5,
-    #section-5 .container .row .col-12.col-lg-6 h3 {
-      text-align: center; }
+      z-index: 0; }
+    #section-5 .container .row .col-12.col-lg-6.text {
+      position: relative;
+      z-index: 2; }
+      #section-5 .container .row .col-12.col-lg-6.text h5,
+      #section-5 .container .row .col-12.col-lg-6.text h3 {
+        text-align: center; }
 
 #section-6 {
   height: 100%;
