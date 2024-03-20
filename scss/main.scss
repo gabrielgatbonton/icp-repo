@@ -220,4 +220,20 @@ body {
   }
 }
 
+// // Page Animation
+// #section {
+//   &-1 {
+//     img {
+//       transform: translate(-200px);
+//       animation: heading 2s forwards ease-in;
+//     }s
+//   }
+// }
+
+// @keyframes heading {
+//   to {
+//     transform: translateX(0);
+//   }
+// }
+
 @import "media";
