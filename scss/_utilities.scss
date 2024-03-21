@@ -18,23 +18,28 @@
 
 //Buttons
 .btn {
-  transition: all 1s;
-}
-.btn:hover {
-  background: $primary-color;
-  opacity: 0.8;
-}
-.btn-primary {
-  background: $primary-color;
-  color: set-text-color($primary-color);
-  border: none;
-  font-weight: 600;
-}
-.btn-secondary {
-  background: $secondary-color;
-  color: set-text-color($secondary-color);
-  border: none;
-  font-weight: 600;
+  &-primary {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    border: none;
+    font-weight: 600;
+    transition: background 1s ease-in-out;
+    &:hover {
+      background: $primary-color;
+      opacity: 0.9;
+    }
+  }
+  &-secondary {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    border: none;
+    font-weight: 600;
+    transition: background 1s ease-in-out;
+    &:hover {
+      background: $secondary-color;
+      opacity: 0.9;
+    }
+  }
 }
 
 //Backgrounds

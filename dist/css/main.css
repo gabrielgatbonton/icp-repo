@@ -12,24 +12,25 @@
   color: #1b8366;
   font-weight: 800; }
 
-.btn {
-  transition: all 1s; }
-
-.btn:hover {
-  background: #1b8366;
-  opacity: 0.8; }
-
 .btn-primary {
   background: #1b8366;
   color: #fff;
   border: none;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: background 1s ease-in-out; }
+  .btn-primary:hover {
+    background: #1b8366;
+    opacity: 0.9; }
 
 .btn-secondary {
   background: #e9ae0b;
   color: #fff;
   border: none;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: background 1s ease-in-out; }
+  .btn-secondary:hover {
+    background: #e9ae0b;
+    opacity: 0.9; }
 
 .bg-blur {
   backdrop-filter: blur(5px);
@@ -219,7 +220,7 @@ body {
           text-decoration: none;
           color: #fff; }
         #main-footer .container .row .col-12.col-md-4 ul.list li a:hover {
-          color: #1b8366; }
+          color: #e9ae0b; }
 
 @media (max-width: 1440px) {
   #section-1 .container-case .container .row .col-12.col-md-6.text h1 {
