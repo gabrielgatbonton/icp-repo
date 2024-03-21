@@ -220,6 +220,58 @@ body {
   }
 }
 
+// Footer
+#main-footer {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  .container {
+    .row {
+      .col-12.col-md-4 {
+        padding: 3rem 2rem;
+        div {
+          a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: set-text-color($primary-color);
+          }
+        }
+        input[type="email"] {
+          width: 90%;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+        }
+        input[type="email"]:active {
+          border: $secondary-color solid;
+        }
+        h3 {
+          font-weight: 800;
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+        ul.list {
+          list-style: none;
+          padding: 0;
+          li {
+            padding: 0.5rem 0;
+            border-bottom: #f4f4f4 dotted 1px;
+            width: 90%;
+
+            a {
+              text-decoration: none;
+              color: set-text-color($primary-color);
+            }
+            a:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // // Page Animation
 // #section {
 //   &-1 {

@@ -25,6 +25,18 @@
   border: none;
   font-weight: 600; }
 
+.btn-secondary {
+  background: #e9ae0b;
+  color: #fff;
+  border: none;
+  font-weight: 600; }
+
+.bg-blur {
+  backdrop-filter: blur(5px);
+  /* Ensure the navbar remains opaque */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Adjust opacity as needed */ }
+
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -175,6 +187,39 @@ body {
   background: #f5fafe;
   text-align: center;
   padding: 100px 0; }
+
+#main-footer {
+  background: #1b8366;
+  color: #fff; }
+  #main-footer .container .row .col-12.col-md-4 {
+    padding: 3rem 2rem; }
+    #main-footer .container .row .col-12.col-md-4 div a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: #fff; }
+    #main-footer .container .row .col-12.col-md-4 input[type="email"] {
+      width: 90%;
+      padding: 0.5rem;
+      margin-bottom: 1rem; }
+    #main-footer .container .row .col-12.col-md-4 input[type="email"]:active {
+      border: #e9ae0b solid; }
+    #main-footer .container .row .col-12.col-md-4 h3 {
+      font-weight: 800; }
+      #main-footer .container .row .col-12.col-md-4 h3 img {
+        width: 50px;
+        height: 50px; }
+    #main-footer .container .row .col-12.col-md-4 ul.list {
+      list-style: none;
+      padding: 0; }
+      #main-footer .container .row .col-12.col-md-4 ul.list li {
+        padding: 0.5rem 0;
+        border-bottom: #f4f4f4 dotted 1px;
+        width: 90%; }
+        #main-footer .container .row .col-12.col-md-4 ul.list li a {
+          text-decoration: none;
+          color: #fff; }
+        #main-footer .container .row .col-12.col-md-4 ul.list li a:hover {
+          color: #1b8366; }
 
 @media (max-width: 1440px) {
   #section-1 .container-case .container .row .col-12.col-md-6.text h1 {
