@@ -64,21 +64,22 @@ body {
       #section-1 .container-case .container .row .col-12.col-md-6.images {
         position: relative; }
         #section-1 .container-case .container .row .col-12.col-md-6.images img.img-fluid {
-          position: relative; }
+          position: relative;
+          right: 50px; }
         #section-1 .container-case .container .row .col-12.col-md-6.images img.position-man {
           height: 500px;
           position: absolute;
-          right: -100px; }
+          right: -50px; }
 
 #section-2 {
   height: 100%;
   padding: 50px 0;
   background: #f5fafe; }
   #section-2 img {
-    width: 300px;
+    max-width: 300px;
     height: auto; }
   #section-2 .text-box {
-    width: 400px;
+    width: 100%;
     text-align: center; }
     #section-2 .text-box p {
       text-align: justify; }
@@ -125,6 +126,7 @@ body {
           color: #fff;
           margin-bottom: 10px; }
       #section-4 .container #timeline ul li div img.image {
+        position: absolute;
         width: 300px; }
     #section-4 .container #timeline ul li::after {
       content: "";
@@ -152,11 +154,9 @@ body {
     #section-4 .container #timeline ul li:nth-child(even) .item h5 {
       text-align: end; }
     #section-4 .container #timeline ul li:nth-child(odd) img.image {
-      position: absolute;
       top: 23%;
       left: -350px; }
     #section-4 .container #timeline ul li:nth-child(even) img.image {
-      position: absolute;
       top: 23%;
       left: 50px; }
 
@@ -267,6 +267,8 @@ body {
     padding: 50px 30px 50px 30px; }
     #section-1 .container-case .container .row .col-12.col-md-6.images .position-man {
       display: none; }
+    #section-1 .container-case .container .row .col-12.col-md-6.images img.img-fluid {
+      right: 0; }
   #section-2 .container .row .col-12 .text-box {
     margin: 0 auto 0 auto; }
   #section-3 .container {
@@ -297,25 +299,27 @@ body {
 @media (max-width: 576px) {
   #section-1 .container-case .container .row .col-12.col-md-6.text h1 {
     font-size: 2.5rem; }
-  #section-4 .container #timeline ul li {
-    margin: 0 auto 0 0;
-    padding: 40px 0; }
-    #section-4 .container #timeline ul li div.item {
-      width: 80vw; }
-    #section-4 .container #timeline ul li div img.image {
-      width: 80vw; }
-  #section-4 .container #timeline ul li::after {
-    top: 65px; }
-  #section-4 .container #timeline ul li:nth-child(odd) img.image,
-  #section-4 .container #timeline ul li:nth-child(even) img.image {
-    position: relative;
-    left: 40px; }
-  #section-4 .container #timeline ul li:nth-child(even) .item {
-    left: 40px; }
-  #section-4 .container #timeline ul li:nth-child(even) .item .chip {
-    margin-left: 0; }
-  #section-4 .container #timeline ul li:nth-child(even) .item h5 {
-    text-align: start; }
+  #section-4 {
+    overflow: hidden; }
+    #section-4 .container #timeline ul li {
+      margin: 0 auto 0 0;
+      padding: 40px 0; }
+      #section-4 .container #timeline ul li div.item {
+        width: 75vw; }
+      #section-4 .container #timeline ul li div img.image {
+        width: 75vw; }
+    #section-4 .container #timeline ul li::after {
+      top: 65px; }
+    #section-4 .container #timeline ul li:nth-child(odd) img.image,
+    #section-4 .container #timeline ul li:nth-child(even) img.image {
+      position: relative;
+      left: 40px; }
+    #section-4 .container #timeline ul li:nth-child(even) .item {
+      left: 40px; }
+    #section-4 .container #timeline ul li:nth-child(even) .item .chip {
+      margin-left: 0; }
+    #section-4 .container #timeline ul li:nth-child(even) .item h5 {
+      text-align: start; }
   #section-5 .wave {
     display: none; }
   #section-5 .container .row .col-12.col-lg-6.text {

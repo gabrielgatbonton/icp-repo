@@ -1,8 +1,13 @@
 @import "config";
 @import "utilities";
 
+// html {
+//   width: 100%;
+// }
+
 body {
   font-family: $mont-font;
+  // overflow: hidden;
 }
 
 #navbar {
@@ -39,11 +44,12 @@ body {
             position: relative;
             img.img-fluid {
               position: relative;
+              right: 50px;
             }
             img.position-man {
               height: 500px;
               position: absolute;
-              right: -100px;
+              right: -50px;
             }
           }
         }
@@ -56,11 +62,11 @@ body {
     background: $bg-color-white-bluish;
 
     img {
-      width: 300px;
+      max-width: 300px;
       height: auto;
     }
     .text-box {
-      width: 400px;
+      width: 100%;
       text-align: center;
       p {
         text-align: justify;
@@ -122,6 +128,7 @@ body {
               }
             }
             div img.image {
+              position: absolute;
               width: 300px;
             }
           }
@@ -164,13 +171,11 @@ body {
           }
 
           li:nth-child(odd) img.image {
-            position: absolute;
             top: 23%;
             left: -350px;
           }
 
           li:nth-child(even) img.image {
-            position: absolute;
             top: 23%;
             left: 50px;
           }
